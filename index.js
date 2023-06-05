@@ -19,7 +19,7 @@ function changeName() {
       resultName.innerHTML = capital + rest;
   }
   else if (checkbox == "No") {
-      resultName.textContent = 'Username';
+      resultName.textContent = "Username";
   }
 }
 
@@ -47,7 +47,7 @@ document.querySelector(".yourfoto").src = yourFoto;
 
 function addDate (){
   let resultDate = new Date();
-  document.querySelector('.resultDate').textContent = resultDate;
+  document.querySelector(".resultDate").textContent = resultDate;
 }
 
 function seeResult() {
