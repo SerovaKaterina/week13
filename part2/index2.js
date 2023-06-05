@@ -9,7 +9,7 @@ function formatDate(date) {
   let diffMin = diffSec / 60;
   let diffHour = diffMin / 60;
 
-  // форматирование
+ 
   year = year.toString().slice(-2);
   month = month < 10 ? '0' + month : month;
   dayOfMonth = dayOfMonth < 10 ? '0' + dayOfMonth : dayOfMonth;
