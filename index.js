@@ -27,12 +27,32 @@ function changeName() {
 function changeComment() {
   resultComment.innerHTML = yourComment.value.replace(/(xxx|viagra)/gi, "***");
 }
-function changeImage() {
+/*  function changeImage() {
   document.querySelector(".yourfoto").src = yourFoto.value;
+}
+*/
+
+
+function changeImage() {
+  let img = [ "./assets/images/1.png" , "./assets/images/2.jpg" , "./assets/images/3.png" , "./assets/images/4.png" ,"./assets/images/5.png"
+];
+let newImg = Math.round(Math.random() *  img.length);
+  if (yourFoto.value != "") {
+document.querySelector(".yourfoto").src = yourFoto;
+  }
+  else {
+    document.querySelector(".yourfoto").src = img[newImg];
+  }
+}
+
+function addDate (){
+  let resultDate = new Date();
+  document.querySelector('.resultDate').textContent = resultDate;
 }
 
 function seeResult() {
   changeName();
   changeImage();
   changeComment();
+  addDate();
 }
